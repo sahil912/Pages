@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoneyMinder - Support & Privacy</title>
+    <style>
+        :root {
+            --primary-color: #10B981;
+            --primary-dark: #059669;
+            --text-color: #1F2937;
+            --text-light: #6B7280;
+            --bg-color: #F9FAFB;
+            --card-bg: #FFFFFF;
+            --border-color: #E5E7EB;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            background: white;
+            border-radius: 18px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--card-bg);
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+
+        nav a:hover, nav a.active {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 0;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: var(--primary-dark);
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        section h3 {
+            font-size: 1.3rem;
+            margin: 30px 0 15px;
+            color: var(--text-color);
+        }
+
+        section p, section li {
+            color: var(--text-light);
+            margin-bottom: 15px;
+        }
+
+        section ul {
+            padding-left: 25px;
+        }
+
+        section li {
+            margin-bottom: 10px;
+        }
+
+        /* Cards */
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border: 1px solid var(--border-color);
+        }
+
+        .card h4 {
+            color: var(--primary-dark);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        /* FAQ */
+        .faq-item {
+            border-bottom: 1px solid var(--border-color);
+            padding: 20px 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: var(--text-color);
+            margin-bottom: 10px;
+        }
+
+        .faq-answer {
+            color: var(--text-light);
+        }
+
+        /* Contact */
+        .contact-box {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .contact-box a {
+            color: white;
+            font-weight: 600;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--text-color);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: var(--primary-color);
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            nav ul {
+                gap: 10px;
+            }
+
+            nav a {
+                padding: 8px 15px;
+                font-size: 0.9rem;
+            }
+
+            section h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        .last-updated {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 30px;
+        }
+
+        .highlight {
+            background: #ECFDF5;
+            border-left: 4px solid var(--primary-color);
+            padding: 15px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="app-icon">💰</div>
+        <h1>MoneyMinder</h1>
+        <p>Your Daily Finance Companion</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#support" class="active">Support</a></li>
+            <li><a href="#privacy">Privacy Policy</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- SUPPORT SECTION -->
+        <section id="support">
+            <h2>Support</h2>
+            <p class="last-updated">We're here to help you manage your finances effectively.</p>
+
+            <div class="card">
+                <h4>About MoneyMinder</h4>
+                <p>MoneyMinder is a personal finance app designed to help you track your daily income, expenses, loans, and budgets. With a beautiful, intuitive interface, managing your money has never been easier.</p>
+            </div>
+
+            <h3>Key Features</h3>
+            <div class="card">
+                <ul>
+                    <li><strong>Income & Expense Tracking</strong> - Log your daily transactions with categories</li>
+                    <li><strong>Multiple Accounts</strong> - Manage cash, bank accounts, credit cards, and wallets</li>
+                    <li><strong>Loan Management</strong> - Track money you've lent or borrowed</li>
+                    <li><strong>Budget Planning</strong> - Set monthly budgets for each category</li>
+                    <li><strong>Receipt Photos</strong> - Attach images to your transactions</li>
+                    <li><strong>Daily Reminders</strong> - Never forget to log your expenses</li>
+                    <li><strong>iCloud Sync</strong> - Sync across all your devices (Premium)</li>
+                    <li><strong>Data Export</strong> - Export your data to CSV (Premium)</li>
+                    <li><strong>App Lock</strong> - Secure with Face ID or Touch ID (Premium)</li>
+                </ul>
+            </div>
+
+            <h3>Frequently Asked Questions</h3>
+            <div class="card">
+                <div class="faq-item">
+                    <div class="faq-question">How do I add a transaction?</div>
+                    <div class="faq-answer">Tap the "+" button on the home screen, select income or expense, enter the amount, choose a category, and save.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">How do I track a loan?</div>
+                    <div class="faq-answer">Go to the Loans tab, tap "+", select whether you gave or received money, add the person's details, and enter the amount. You can track repayments and set due date reminders.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">How does iCloud sync work?</div>
+                    <div class="faq-answer">iCloud sync is a premium feature. Once activated, your data automatically syncs across all your Apple devices signed into the same iCloud account. Note: You may need to restart the app after upgrading for sync to activate.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">How do I restore my purchase?</div>
+                    <div class="faq-answer">Go to Settings → Premium → Restore Purchases. Make sure you're signed in with the same Apple ID used for the original purchase.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Can I export my data?</div>
+                    <div class="faq-answer">Yes! Premium users can export transactions and loans to CSV format. Go to Settings → Export Data.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">How do I set a budget?</div>
+                    <div class="faq-answer">Go to the Budget tab, tap "+" or select a category, and set your monthly spending limit. The app will track your progress and notify you when you're approaching the limit.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Is my data secure?</div>
+                    <div class="faq-answer">Yes! All your data is stored locally on your device. If you enable iCloud sync, data is encrypted and stored in your private iCloud container. We never have access to your financial data.</div>
+                </div>
+            </div>
+
+            <h3>Contact Us</h3>
+            <div class="contact-box">
+                <p>Have a question or feedback? We'd love to hear from you!</p>
+                <p style="margin-top: 15px; font-size: 1.2rem;">
+                    <a href="mailto:j.sahil.jain@gmail.com">support</a>
+                </p>
+                <p style="margin-top: 10px; font-size: 0.9rem; opacity: 0.8;">
+                    We typically respond within 24-48 hours.
+                </p>
+            </div>
+        </section>
+
+        <!-- PRIVACY POLICY SECTION -->
+        <section id="privacy">
+            <h2>Privacy Policy</h2>
+            <p class="last-updated">Last Updated: December 2024</p>
+
+            <div class="highlight">
+                <strong>Our Commitment:</strong> Your privacy is important to us. MoneyMinder is designed with privacy as a core principle. We do not collect, sell, or share your personal financial data.
+            </div>
+
+            <h3>1. Information We Collect</h3>
+            <div class="card">
+                <h4>Data You Provide</h4>
+                <p>MoneyMinder stores the following data that you enter:</p>
+                <ul>
+                    <li>Transaction records (income, expenses, transfers)</li>
+                    <li>Account information (account names, balances)</li>
+                    <li>Loan records and repayment history</li>
+                    <li>Budget settings</li>
+                    <li>Category preferences</li>
+                    <li>Receipt images (stored locally)</li>
+                    <li>People/contact names for loan tracking</li>
+                </ul>
+
+                <h4 style="margin-top: 20px;">Data We Do NOT Collect</h4>
+                <ul>
+                    <li>We do not collect personal identification information</li>
+                    <li>We do not collect bank account numbers or financial credentials</li>
+                    <li>We do not track your location</li>
+                    <li>We do not collect usage analytics</li>
+                    <li>We do not access your contacts without explicit permission</li>
+                </ul>
+            </div>
+
+            <h3>2. How Your Data is Stored</h3>
+            <div class="card">
+                <h4>Local Storage</h4>
+                <p>All your financial data is stored locally on your device using Apple's Core Data framework. This data never leaves your device unless you enable iCloud sync.</p>
+
+                <h4 style="margin-top: 20px;">iCloud Sync (Premium Feature)</h4>
+                <p>If you enable iCloud sync:</p>
+                <ul>
+                    <li>Your data is encrypted and stored in your private iCloud container</li>
+                    <li>Data syncs only between devices signed into your Apple ID</li>
+                    <li>Apple manages the encryption and security of iCloud data</li>
+                    <li>We cannot access your iCloud data</li>
+                </ul>
+            </div>
+
+            <h3>3. Third-Party Services</h3>
+            <div class="card">
+                <h4>Apple Services</h4>
+                <p>MoneyMinder uses the following Apple services:</p>
+                <ul>
+                    <li><strong>StoreKit</strong> - For processing in-app purchases (Apple handles all payment data)</li>
+                    <li><strong>CloudKit</strong> - For iCloud sync (Premium users only)</li>
+                    <li><strong>Local Notifications</strong> - For reminders (processed entirely on your device)</li>
+                </ul>
+                <p style="margin-top: 15px;">We do not use any third-party analytics, advertising, or tracking services.</p>
+            </div>
+
+            <h3>4. Device Permissions</h3>
+            <div class="card">
+                <p>MoneyMinder may request the following permissions:</p>
+                <ul>
+                    <li><strong>Camera</strong> - To capture receipt photos (optional)</li>
+                    <li><strong>Photo Library</strong> - To attach receipt images (optional)</li>
+                    <li><strong>Face ID / Touch ID</strong> - To secure the app (Premium, optional)</li>
+                    <li><strong>Notifications</strong> - To send daily reminders and loan due alerts (optional)</li>
+                    <li><strong>Contacts</strong> - To quickly add people for loans (Premium, optional)</li>
+                </ul>
+                <p style="margin-top: 15px;">All permissions are optional and can be managed in your device's Settings.</p>
+            </div>
+
+            <h3>5. Data Security</h3>
+            <div class="card">
+                <ul>
+                    <li>All data is stored locally using Apple's secure Core Data framework</li>
+                    <li>iCloud data is encrypted in transit and at rest by Apple</li>
+                    <li>Optional Face ID/Touch ID protection for app access</li>
+                    <li>We do not have servers that store your data</li>
+                    <li>We cannot access, view, or recover your data</li>
+                </ul>
+            </div>
+
+            <h3>6. Data Retention & Deletion</h3>
+            <div class="card">
+                <p>Your data remains on your device until you delete it. To remove all data:</p>
+                <ul>
+                    <li><strong>Delete the app</strong> - This removes all local data</li>
+                    <li><strong>iCloud data</strong> - Can be managed in Settings → Apple ID → iCloud → Manage Storage</li>
+                </ul>
+                <p style="margin-top: 15px;">Since we don't collect your data on our servers, there's nothing for us to delete.</p>
+            </div>
+
+            <h3>7. Children's Privacy</h3>
+            <div class="card">
+                <p>MoneyMinder is not directed at children under 13. We do not knowingly collect information from children under 13. The app is designed for general audiences managing personal finances.</p>
+            </div>
+
+            <h3>8. Changes to This Policy</h3>
+            <div class="card">
+                <p>We may update this Privacy Policy from time to time. We will notify users of any material changes by updating the "Last Updated" date at the top of this policy. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+            </div>
+
+            <h3>9. Contact Us</h3>
+            <div class="card">
+                <p>If you have any questions about this Privacy Policy or our practices, please contact us at:</p>
+                <p style="margin-top: 10px;"><strong>Email:</strong> <a href="mailto:j.sahil.jain@gmail.com">j.sahil.jain@gmail.com</a></p>
+            </div>
+
+            <h3>10. Your Rights</h3>
+            <div class="card">
+                <p>You have complete control over your data:</p>
+                <ul>
+                    <li><strong>Access</strong> - View all your data within the app</li>
+                    <li><strong>Export</strong> - Export your data to CSV (Premium)</li>
+                    <li><strong>Delete</strong> - Delete individual records or all data by removing the app</li>
+                    <li><strong>Portability</strong> - Your data is yours; export it anytime</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 MoneyMinder All rights reserved.</p>
+        <p style="margin-top: 10px;">
+            <a href="#support">Support</a> &nbsp;|&nbsp;
+            <a href="#privacy">Privacy Policy</a> &nbsp;|&nbsp;
+            <a href="mailto:support@j.sahil.jain@gmail.com">Contact</a>
+        </p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const section = document.querySelector(this.getAttribute('href'));
+                section.scrollIntoView({ behavior: 'smooth' });
+
+                // Update active state
+                document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // Update active nav on scroll
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            let current = '';
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('nav a').forEach(a => {
+                a.classList.remove('active');
+                if (a.getAttribute('href') === '#' + current) {
+                    a.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
