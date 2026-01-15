@@ -1,0 +1,7 @@
+# Redirects for Cloudflare Pages / Netlify
+# https://developers.cloudflare.com/pages/configuration/redirects/
+
+# Clean URLs (optional - Pages handles this automatically)
+/privacy.html    /privacy    301
+/support.html    /support    301
+/terms.html      /terms      301
