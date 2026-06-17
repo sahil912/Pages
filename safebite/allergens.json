@@ -1,0 +1,113 @@
+{
+  "version": "2026.07",
+  "region": "US+EU+CA",
+  "sources": [
+    "US FDA — FALCPA major food allergens + FASTER Act (sesame), fda.gov/food/food-allergies",
+    "EU/UK — Regulation (EU) 1169/2011 Annex II (14 allergens), food.gov.uk",
+    "Health Canada — priority food allergens",
+    "FARE (Food Allergy Research & Education) derivative/hidden-name lists, foodallergy.org",
+    "FARRP / FASTOIT alternate-names references"
+  ],
+  "attribution": "Canonical allergens follow US FDA (9), EU/UK FIC Annex II (14), and Health Canada priority lists. Alias/derivative terms are compiled from FARE and FARRP hidden-ingredient references. This dictionary is a screening aid, not medical advice, and has not been clinically certified. Cross-contact risk is often unprinted and cannot be detected.",
+  "lastReviewed": "2026-06-16",
+  "precautionaryPhrases": [
+    "may contain",
+    "may also contain",
+    "may contain traces",
+    "traces of",
+    "shared equipment",
+    "made on shared equipment",
+    "made on the same equipment",
+    "made on equipment",
+    "made in a facility",
+    "made in a facility that",
+    "produced in a facility",
+    "manufactured in a facility",
+    "processed in a facility",
+    "packed in a facility",
+    "processed on equipment",
+    "made in a plant"
+  ],
+  "allergens": [
+    {
+      "canonical": "Milk",
+      "region": ["US", "EU", "CA"],
+      "aliases": ["milk", "milk solids", "milk powder", "milk protein", "milk protein hydrolysate", "dry milk", "dried milk", "nonfat milk", "skim milk", "whole milk", "condensed milk", "evaporated milk", "cultured milk", "malted milk", "buttermilk", "casein", "caseinate", "sodium caseinate", "calcium caseinate", "potassium caseinate", "ammonium caseinate", "magnesium caseinate", "rennet casein", "whey", "whey protein", "whey protein concentrate", "whey protein isolate", "sweet whey", "lactose", "lactalbumin", "lactalbumin phosphate", "lactoglobulin", "lactoferrin", "butter", "butterfat", "butter fat", "butter oil", "cultured butter", "cream", "sour cream", "cream cheese", "heavy cream", "half and half", "ghee", "curd", "curds", "custard", "nougat", "rennet", "dairy", "cheese", "yogurt", "yoghurt", "pudding", "kefir", "quark", "paneer"]
+    },
+    {
+      "canonical": "Egg",
+      "region": ["US", "EU", "CA"],
+      "aliases": ["egg", "eggs", "egg white", "egg whites", "egg yolk", "egg yolks", "egg solids", "egg powder", "dried egg", "powdered egg", "albumin", "albumen", "ovalbumin", "ovomucoid", "ovomucin", "ovovitellin", "ovoglobulin", "livetin", "lysozyme", "globulin", "vitellin", "mayonnaise", "mayo", "meringue", "eggnog", "egg noodles"]
+    },
+    {
+      "canonical": "Peanut",
+      "region": ["US", "EU", "CA"],
+      "aliases": ["peanut", "peanuts", "peanut butter", "peanut flour", "peanut oil", "peanut protein", "peanut protein hydrolysate", "arachis", "arachis oil", "arachis hypogaea", "groundnut", "groundnuts", "ground nut", "monkey nut", "monkey nuts", "beer nut", "beer nuts", "goober", "goobers", "mandelona", "valencia peanut"]
+    },
+    {
+      "canonical": "Tree nuts",
+      "region": ["US", "EU", "CA"],
+      "aliases": ["almond", "almonds", "almond paste", "marzipan", "brazil nut", "brazil nuts", "beechnut", "beech nut", "butternut", "cashew", "cashews", "chestnut", "chestnuts", "chinquapin", "filbert", "filberts", "hazelnut", "hazelnuts", "gianduja", "ginkgo nut", "hickory", "hickory nut", "lychee nut", "litchi nut", "macadamia", "macadamia nut", "macadamia nuts", "nangai nut", "pecan", "pecans", "pine nut", "pine nuts", "pignoli", "pinon nut", "pili nut", "pistachio", "pistachios", "praline", "walnut", "walnuts", "black walnut", "shea nut", "nut butter", "nut meal", "nut paste", "pesto"]
+    },
+    {
+      "canonical": "Wheat",
+      "region": ["US", "EU", "CA"],
+      "aliases": ["wheat", "wheat flour", "whole wheat", "wheat bran", "wheat germ", "wheat starch", "wheat gluten", "vital wheat gluten", "wheat protein", "wheat protein isolate", "hydrolyzed wheat protein", "wheat berries", "bulgur", "couscous", "cracker meal", "durum", "einkorn", "emmer", "farina", "farro", "kamut", "semolina", "spelt", "triticale", "seitan", "matzo", "matzoh", "matzah", "club wheat", "graham", "graham flour", "bread crumbs", "breadcrumbs", "enriched flour"]
+    },
+    {
+      "canonical": "Soy",
+      "region": ["US", "EU", "CA"],
+      "aliases": ["soy", "soya", "soybean", "soybeans", "soya bean", "soybean oil", "soy lecithin", "soya lecithin", "soy flour", "soy protein", "soy protein isolate", "soy protein concentrate", "hydrolyzed soy protein", "textured vegetable protein", "textured soy protein", "tvp", "edamame", "miso", "natto", "tempeh", "tofu", "tamari", "shoyu", "soy sauce", "soy milk", "soy fiber", "soy grits", "soy nuts", "soy sprouts", "okara"]
+    },
+    {
+      "canonical": "Sesame",
+      "region": ["US", "EU", "CA"],
+      "aliases": ["sesame", "sesame seed", "sesame seeds", "sesame oil", "sesame paste", "sesame flour", "sesame salt", "tahini", "tahina", "tehina", "benne", "benne seed", "benniseed", "gingelly", "gingelly oil", "til", "sim sim", "gomasio", "halvah", "sesamol", "sesamolina", "sesamum", "sesamum indicum"]
+    },
+    {
+      "canonical": "Fish",
+      "region": ["US", "EU", "CA"],
+      "aliases": ["fish", "fish oil", "fish sauce", "fish stock", "fish gelatin", "fish flavoring", "fish stick", "fish sticks", "anchovy", "anchovies", "bass", "catfish", "cod", "flounder", "grouper", "haddock", "hake", "halibut", "herring", "mahi mahi", "perch", "pike", "pollock", "pollack", "salmon", "sardine", "sardines", "snapper", "sole", "swordfish", "tilapia", "trout", "tuna", "caviar", "roe", "surimi", "worcestershire", "worcestershire sauce", "imitation fish"]
+    },
+    {
+      "canonical": "Crustacean shellfish",
+      "region": ["US", "EU", "CA"],
+      "aliases": ["shrimp", "shrimps", "prawn", "prawns", "crab", "crabs", "crabmeat", "lobster", "langoustine", "langouste", "crayfish", "crawfish", "crawdad", "ecrevisse", "krill", "barnacle", "scampi", "moreton bay bug", "tomalley"]
+    },
+    {
+      "canonical": "Mollusc",
+      "region": ["EU", "CA"],
+      "aliases": ["clam", "clams", "mussel", "mussels", "oyster", "oysters", "scallop", "scallops", "squid", "calamari", "octopus", "snail", "snails", "escargot", "abalone", "cockle", "cockles", "whelk", "periwinkle", "cuttlefish", "limpet"]
+    },
+    {
+      "canonical": "Mustard",
+      "region": ["EU", "CA"],
+      "aliases": ["mustard", "mustard seed", "mustard seeds", "mustard flour", "mustard powder", "mustard oil", "mustard greens", "dijon", "dijon mustard", "prepared mustard", "sprouted mustard"]
+    },
+    {
+      "canonical": "Celery",
+      "region": ["EU"],
+      "aliases": ["celery", "celeriac", "celery seed", "celery seeds", "celery salt", "celery extract", "celery powder", "celery spice", "celery leaves"]
+    },
+    {
+      "canonical": "Lupin",
+      "region": ["EU"],
+      "aliases": ["lupin", "lupine", "lupin flour", "lupine flour", "lupin bean", "lupini", "lupini bean", "lupin protein"]
+    },
+    {
+      "canonical": "Sulphites",
+      "region": ["EU", "CA"],
+      "aliases": ["sulphite", "sulphites", "sulfite", "sulfites", "sulphur dioxide", "sulfur dioxide", "sodium sulphite", "sodium sulfite", "sodium bisulphite", "sodium bisulfite", "sodium metabisulphite", "sodium metabisulfite", "potassium bisulphite", "potassium bisulfite", "potassium metabisulphite", "potassium metabisulfite", "potassium sulphite", "calcium sulphite", "calcium bisulphite", "e220", "e221", "e222", "e223", "e224", "e225", "e226", "e227", "e228"]
+    },
+    {
+      "canonical": "Gluten",
+      "region": ["EU", "CA"],
+      "aliases": ["gluten", "wheat", "barley", "rye", "oats", "oat", "malt", "malt extract", "malt syrup", "malt flavoring", "malt vinegar", "brewer's yeast", "brewers yeast", "spelt", "kamut", "triticale", "einkorn", "emmer", "farro", "semolina", "durum", "bulgur", "couscous", "seitan"]
+    },
+    {
+      "canonical": "Coconut",
+      "region": ["US"],
+      "aliases": ["coconut", "coconut milk", "coconut cream", "coconut oil", "coconut water", "coconut flour", "coconut butter", "creamed coconut", "desiccated coconut", "copra"]
+    }
+  ]
+}
